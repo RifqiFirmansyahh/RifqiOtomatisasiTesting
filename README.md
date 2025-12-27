@@ -1,60 +1,119 @@
-Rifqi Demoblaze Automation Testing (UAS PPL)
-Proyek ini adalah implementasi pengujian otomasi untuk aplikasi e-commerce Demoblaze. Pengujian mencakup 12 skenario yang terbagi ke dalam 4 modul utama menggunakan Selenium WebDriver, Java, dan TestNG.
+# 🛒 Demoblaze Automation Testing Suite
 
-🚀 Fitur Pengujian
-Arsitektur Page Object Model (POM): Memisahkan logika pengujian dengan elemen UI untuk kemudahan pemeliharaan.
+### **Proyek UAS Praktikum Perangkat Lunak (PPL)**
+
+Repositori ini berisi proyek pengujian otomasi fungsional untuk aplikasi web e-commerce [Demoblaze](https://www.demoblaze.com). Pengujian ini mencakup skenario *end-to-end* mulai dari autentikasi hingga proses pembelian menggunakan arsitektur **Page Object Model (POM)**.
+
+---
+
+## 📋 Cakupan Pengujian (Test Scope)
+
+Proyek ini mengotomasi **12 Test Case** yang dikelompokkan ke dalam 4 modul utama sesuai dengan rencana pengujian manual:
+
+1. 
+**Modul 1: User Authentication** (Login Valid, Login Gagal, & Logout).
 
 
-Modul Terintegrasi: Mencakup Autentikasi, Katalog Produk, Keranjang Belanja, dan Alur Pembelian.
+2. 
+**Modul 2: Product Catalog** (Filter Kategori, Navigasi Next, & Detail Produk).
 
 
-Pelaporan ExtentReports: Menghasilkan laporan HTML interaktif di folder reports/TestReport.html.
+3. 
+**Modul 3: Shopping Cart** (Tambah Produk, Lihat Keranjang, & Hapus Produk).
 
 
-Deteksi Bug Otomatis: Skrip dikonfigurasi untuk mendeteksi BUG-001 pada fitur Checkout.
+4. 
+**Modul 4: Purchase Flow** (Checkout Valid, Form Kosong, & Validasi Keranjang Kosong).
 
 
-🛠️ Tech Stack
-Language: Java 17+
 
-Automation: Selenium WebDriver 4.x
+---
 
-Test Runner: TestNG
+## 🛠️ Arsitektur & Teknologi
 
-Report: ExtentReports 5.x
+Proyek ini dibangun dengan standar industri pengujian perangkat lunak:
 
-Build Tool: Maven
+* 
+**Bahasa Pemrograman:** Java 17.
 
-📂 Struktur Proyek
-Plaintext
 
+* 
+**Automation Tool:** Selenium WebDriver (Manager).
+
+
+* **Test Runner:** TestNG (untuk manajemen urutan tes dan assertions).
+* **Reporting:** ExtentReports (menghasilkan laporan HTML interaktif).
+* **Design Pattern:** Page Object Model (POM) untuk memisahkan logika UI dan skrip tes.
+
+---
+
+## 📂 Struktur Folder
+
+```text
 RifqiOtomatisasiTesting/
-├── reports/                 # Hasil laporan pengujian (HTML)
+├── reports/                 # Laporan hasil eksekusi (HTML)
 ├── src/
-│   ├── main/java/           # Page Object Classes
-│   └── test/java/           # Test Script Classes
-├── pom.xml                  # Dependensi Maven
-└── testng.xml               # Konfigurasi eksekusi
-⚙️ Cara Menjalankan
-Clone Repositori:
+│   ├── main/java/           # Page Objects (Struktur Elemen Web)
+│   └── test/java/           # Test Suites (Logika Pengujian)
+├── pom.xml                  # Konfigurasi Dependensi Maven
+└── testng.xml               # Pengatur Eksekusi Seluruh Modul
 
-Bash
+```
 
+---
+
+## 🚀 Cara Menjalankan (Installation & Execution)
+
+1. **Clone repositori ini:**
+```bash
 git clone https://github.com/UsernameAnda/RifqiOtomatisasiTesting.git
-Buka di IntelliJ IDEA: Pastikan Maven melakukan reload untuk mengunduh semua dependensi.
 
-Eksekusi Pengujian: Klik kanan pada file testng.xml di root project, lalu pilih Run.
-
-Lihat Laporan: Setelah selesai, buka file reports/TestReport.html menggunakan browser.
-
-📊 Ringkasan Hasil (Summary)
-
-Total Kasus Uji: 12 
+```
 
 
+2. **Buka proyek** menggunakan IntelliJ IDEA atau Eclipse.
+3. Pastikan koneksi internet aktif untuk mengunduh dependensi **Maven**.
+4. Klik kanan pada file **`testng.xml`** di root folder.
+5. Pilih **"Run 'testng.xml'"**.
+6. Setelah eksekusi selesai, buka folder **`reports/TestReport.html`** menggunakan browser pilihan Anda.
 
-Lulus (Passed): 11 
+---
+
+## 🐛 Bug Discovery (BUG-001)
+
+Berdasarkan hasil pengujian otomatis, sistem berhasil mendeteksi satu bug fungsional kritis:
+
+* 
+**ID:** BUG-001.
+
+
+* 
+**Deskripsi:** Tombol "Place Order" tetap aktif meskipun keranjang belanja kosong.
+
+
+* 
+**Status Otomasi:** **FAILED** (Sesuai dengan temuan pada pengujian manual).
 
 
 
-Gagal (Failed): 1 (BUG-001 pada TC-PURCH-03)
+---
+
+## 👤 Identitas Penguji
+
+* 
+**Nama:** Rifqi Firmansyah.
+
+
+* **NPM:** 230109029.
+* **Mata Kuliah:** Praktikum Perangkat Lunak (UAS).
+
+---
+
+### Cara Menggunakan:
+
+1. Buat file baru di root project IntelliJ Anda dengan nama **`README.md`**.
+2. Salin dan tempel (copy-paste) teks di atas.
+3. Simpan dan lakukan **Commit & Push** ke GitHub.
+4. Tampilan di GitHub akan otomatis menjadi rapi dengan ikon dan tabel.
+
+Apakah ada bagian identitas atau link yang ingin Anda sesuaikan lagi?
