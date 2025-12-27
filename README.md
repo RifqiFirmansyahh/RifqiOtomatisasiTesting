@@ -10,22 +10,10 @@ Repositori ini berisi proyek pengujian otomasi fungsional untuk aplikasi web e-c
 
 Proyek ini mengotomasi **12 Test Case** yang dikelompokkan ke dalam 4 modul utama sesuai dengan rencana pengujian manual:
 
-1. 
-**Modul 1: User Authentication** (Login Valid, Login Gagal, & Logout).
-
-
-2. 
-**Modul 2: Product Catalog** (Filter Kategori, Navigasi Next, & Detail Produk).
-
-
-3. 
-**Modul 3: Shopping Cart** (Tambah Produk, Lihat Keranjang, & Hapus Produk).
-
-
-4. 
-**Modul 4: Purchase Flow** (Checkout Valid, Form Kosong, & Validasi Keranjang Kosong).
-
-
+1. **Modul 1: User Authentication** (Login Valid, Login Gagal, & Logout).
+2. **Modul 2: Product Catalog** (Filter Kategori, Navigasi Next, & Detail Produk).
+3. **Modul 3: Shopping Cart** (Tambah Produk, Lihat Keranjang, & Hapus Produk).
+4. **Modul 4: Purchase Flow** (Checkout Valid, Form Kosong, & Validasi Keranjang Kosong).
 
 ---
 
@@ -33,14 +21,8 @@ Proyek ini mengotomasi **12 Test Case** yang dikelompokkan ke dalam 4 modul utam
 
 Proyek ini dibangun dengan standar industri pengujian perangkat lunak:
 
-* 
-**Bahasa Pemrograman:** Java 17.
-
-
-* 
-**Automation Tool:** Selenium WebDriver (Manager).
-
-
+* **Bahasa Pemrograman:** Java 17.
+* **Automation Tool:** Selenium WebDriver (Manager).
 * **Test Runner:** TestNG (untuk manajemen urutan tes dan assertions).
 * **Reporting:** ExtentReports (menghasilkan laporan HTML interaktif).
 * **Design Pattern:** Page Object Model (POM) untuk memisahkan logika UI dan skrip tes.
@@ -83,27 +65,15 @@ git clone https://github.com/UsernameAnda/RifqiOtomatisasiTesting.git
 
 Berdasarkan hasil pengujian otomatis, sistem berhasil mendeteksi satu bug fungsional kritis:
 
-* 
-**ID:** BUG-001.
-
-
-* 
-**Deskripsi:** Tombol "Place Order" tetap aktif meskipun keranjang belanja kosong.
-
-
-* 
-**Status Otomasi:** **FAILED** (Sesuai dengan temuan pada pengujian manual).
-
-
-
+* **ID:** BUG-001.
+* **Deskripsi:** Tombol "Place Order" tetap aktif meskipun keranjang belanja kosong.
+* **Status Otomasi:** **FAILED** (Sesuai dengan temuan pada pengujian manual).
+  
 ---
 
 ## 👤 Identitas Penguji
 
-* 
-**Nama:** Rifqi Firmansyah.
-
-
+* **Nama:** Rifqi Firmansyah.
 * **NPM:** 230109029.
 * **Mata Kuliah:** Praktikum Perangkat Lunak (UAS).
 
@@ -115,5 +85,3 @@ Berdasarkan hasil pengujian otomatis, sistem berhasil mendeteksi satu bug fungsi
 2. Salin dan tempel (copy-paste) teks di atas.
 3. Simpan dan lakukan **Commit & Push** ke GitHub.
 4. Tampilan di GitHub akan otomatis menjadi rapi dengan ikon dan tabel.
-
-Apakah ada bagian identitas atau link yang ingin Anda sesuaikan lagi?
